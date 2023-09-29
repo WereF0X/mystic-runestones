@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "mystic_runestones",
+  "version": "1.0 Release",
+  "name": "Mystic RuneStones",
+  "description": "Adds Magic Wands with different abilities",
+  "authors": [
+    "The_WereF0X"
+  ],
+  "contact": {
+    "homepage": "https://discord.gg/eCAHRcTYc9",
+    "sources": ""
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/mystic_runestones/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mcreator.mysticrunestones.MysticRunestonesMod"
+    ],
+    "client": [
+      "net.mcreator.mysticrunestones.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "~1.20",
+    "java": ">=17"
+  },
+  "mixins": [
+    "mystic_runestones.mixins.json"
+  ]
+}

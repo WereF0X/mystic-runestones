@@ -1,0 +1,482 @@
+{
+  "mod_elements": [
+    {
+      "name": "MysticRuneStones",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mystic_rune_stones",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "HealingWand",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/item/HealingWandItem.java",
+          "src/main/resources/assets/mystic_runestones/models/item/healing_wand.json"
+        ]
+      }
+    },
+    {
+      "name": "HealingWandRightclicked",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_wand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/procedures/HealingWandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TpwandRightclicked",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tpwand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/procedures/TpwandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tpwand",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tpwand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/item/TpwandItem.java",
+          "src/main/resources/assets/mystic_runestones/models/item/tpwand.json"
+        ]
+      }
+    },
+    {
+      "name": "FireWandRightclicked",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_wand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/procedures/FireWandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireWand",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mystic_runestones/models/item/fire_wand.json",
+          "src/main/java/net/mcreator/mysticrunestones/item/FireWandItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Withercurse",
+      "type": "enchantment",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "withercurse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/enchantment/WithercurseEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "SummoningWandLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoning_wand_living_entity_is_hit_with_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/procedures/SummoningWandLivingEntityIsHitWithItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SummoningWandRightclicked",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoning_wand_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/procedures/SummoningWandRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SummoningWand",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summoning_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mystic_runestones/models/item/summoning_wand.json",
+          "src/main/java/net/mcreator/mysticrunestones/item/SummoningWandItem.java"
+        ]
+      }
+    },
+    {
+      "name": "HealingWandItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_wand_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/procedures/HealingWandItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Logo",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/item/LogoItem.java",
+          "src/main/resources/assets/mystic_runestones/models/item/logo.json"
+        ]
+      }
+    },
+    {
+      "name": "Wands",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mystic_runestones/recipes/wands.json"
+        ]
+      }
+    },
+    {
+      "name": "Tp",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mystic_runestones/recipes/tp.json"
+        ]
+      }
+    },
+    {
+      "name": "Fire",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mystic_runestones/recipes/fire.json"
+        ]
+      }
+    },
+    {
+      "name": "Summ",
+      "type": "recipe",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summ",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/mystic_runestones/recipes/summ.json"
+        ]
+      }
+    },
+    {
+      "name": "Recipes2",
+      "type": "gui",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipes_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/client/gui/Recipes2Screen.java",
+          "src/main/java/net/mcreator/mysticrunestones/world/inventory/Recipes2Menu.java"
+        ]
+      }
+    },
+    {
+      "name": "Next",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "next",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/procedures/NextProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fecips",
+      "type": "gui",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fecips",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/network/FecipsButtonMessage.java",
+          "src/main/java/net/mcreator/mysticrunestones/client/gui/FecipsScreen.java",
+          "src/main/java/net/mcreator/mysticrunestones/world/inventory/FecipsMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "RecipesOnKeyPressed",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipes_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/procedures/RecipesOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Recipes",
+      "type": "keybind",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/mysticrunestones/network/RecipesMessage.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "gui.mystic_runestones.recipes_2.label_recipes": "Recipes",
+      "enchantment.mystic_runestones.withercurse": "Wither Curse",
+      "key.mystic_runestones.recipes": "Recipes",
+      "item.mystic_runestones.fire_wand": "Fire Wand",
+      "item.mystic_runestones.tpwand": "Teleportation Wand",
+      "gui.mystic_runestones.fecips.label_recipes": "Recipes",
+      "item.mystic_runestones.healing_wand": "Healing Wand",
+      "item.mystic_runestones.summoning_wand": "Summoning Wand",
+      "gui.mystic_runestones.fecips.button_next": "Next",
+      "item.mystic_runestones.logo": "Logo",
+      "item_group.mystic_runestones.mystic_rune_stones": "Mystic RuneStones"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "mystic_runestones",
+    "modName": "Mystic RuneStones",
+    "version": "1.0 Release",
+    "description": "Adds Magic Wands with different abilities",
+    "author": "The_WereF0X",
+    "websiteURL": "https://discord.gg/eCAHRcTYc9",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "updateURL": "https://discord.gg/eCAHRcTYc9",
+    "modPicture": "g2p0oezb624vd8ib8696u3jfd8pgnwpf",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "https://discord.gg/eCAHRcTYc9",
+    "modElementsPackage": "net.mcreator.mysticrunestones",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}
